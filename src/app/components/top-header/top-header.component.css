@@ -1,0 +1,62 @@
+#top-header{
+    width:100%;
+    background-color: #222222;
+    color: white;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+    z-index: 1 !important;
+}
+
+.preOrder-title{
+    cursor: default;
+}
+
+#top-header ul.left{
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+ul.left li{
+    float: left;
+}
+ul.left li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.social{
+    list-style: none;
+}
+.social li{
+    margin-left: 10px;
+}
+.fa{
+    color: white;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+#top-header a:hover,#top-header .fa:hover{
+    color: gray;
+
+}
+#top-header div:last-child{
+    margin-left: auto;
+}
+
+@media screen and (max-width:1025px){
+    #top-header{
+        display: none;
+    }
+}

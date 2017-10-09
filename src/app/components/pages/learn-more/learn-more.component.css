@@ -1,0 +1,32 @@
+.display-content {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-content img {
+    max-width: 100%;
+    padding: 20px 20px 0;
+}
+
+
+#learnmore-section{
+    background-color: white;
+    min-height: auto;
+    overflow: hidden;
+}
+
+#learnmore-section .display-content{
+    background-color: #141414;
+    min-height: 500px;
+}
+
+#learnmore-section .display-content h1 {
+    font-size: 35px;
+    overflow: hidden;
+    margin: 10px 0;
+    font-weight: 700;
+}

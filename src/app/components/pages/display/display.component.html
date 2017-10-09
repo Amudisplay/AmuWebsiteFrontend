@@ -1,0 +1,31 @@
+<div id="display-page">
+  <div class="display-page-content">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active">Library</li>
+      </ol>
+      <h1>Displays</h1>
+      <div class="filer-section">
+        <p>
+            <span class="strong"><a onclick="openFilterNav()" ><i class="fa fa-bars" aria-hidden="true"></i></a> FILTER PRODUCTS</span>
+            <span class="showResult">Showing the single result</span>
+        </p>
+      </div>
+      <div class="products-section" *ngIf="products">
+        <div class="row">
+            <div *ngFor="let product of products" class="col-md-6">
+                <div class="card" >
+                  <img class="card-img-top" [src]="product.src" alt="Product">
+                  <div class="card-body">
+                    <h4 class="card-title">{{product.name}}</h4>
+                    <p class="card-text">{{product.price|currency:'USD':true }}</p>
+                    <a  class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

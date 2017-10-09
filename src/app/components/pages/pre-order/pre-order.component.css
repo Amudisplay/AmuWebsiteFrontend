@@ -1,0 +1,448 @@
+#display-page{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 100%;
+}
+.breadcrumb{
+    display: inline-block;
+    background: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+.breadcrumb a{
+    color: black;
+}
+
+.breadcrumb-item.active {
+    color: black;
+    font-weight: 500;
+}
+.col-sm-6{
+    text-align: left;
+}
+.display-page-content h1{
+    font-size: 3.125em;
+    line-height: 1.4;
+    margin-top: -20px;
+}
+
+.products-section{
+    margin: 60px 0;
+}
+.products-section img{
+    width:100%;
+    cursor: pointer;
+}
+
+.products-section li{
+    margin-bottom: 25px;
+}
+.products-section a{
+    cursor: pointer;
+}
+
+.products-section .strong{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.products-section .desc-pre{
+    font-size: 1em;
+    line-height: 1.75em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+h2{
+    margin-bottom: 30px;
+}
+select.select-style{
+    border:none ;
+    border-bottom: 1px solid #141414;
+    padding: 10px 14px 10px 0;
+    font-size: 20px;
+}
+
+.add{
+    margin-top: 20px;
+}
+.add input{
+    width: 10%;
+    font-size: 20px;
+    border:none;
+    border-bottom: 1px solid #141414;
+    padding-left: 10px;
+    margin-right: 30px;
+}
+
+.breadcrumb-bottom{
+    margin: 30px 0;
+}
+/* test */
+
+.pre-desc{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    overflow: hidden;
+}
+.pre-desc a{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0 20px 20px;
+    
+}
+.active-click{
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+}
+.pre-desc .content{
+    padding: 50px 0 30px;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+.pre-desc .content img{
+    width:90%;
+}
+.pre-desc .content .desc-pre{
+    text-align: left;
+}
+
+.pre-desc .content .strong{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.disabled{
+    pointer-events: none;
+}
+.content .add,
+.content .simpli,
+.content .advan,
+.content .intel{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    vertical-align: top;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+}
+.bolder{
+    font-weight: 700;
+    font-size: 80%;
+    color: black;
+}
+.breadcrumb-item{
+    font-size: 13px;
+    color: gray;
+    cursor: default;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+}
+
+.unclicked{
+    opacity: 0.4;
+}
+.hideAtbeginning {
+    margin-top: 30px;
+    display: none;
+}
+.hideAtbeginning li{
+    width: 20%;
+    margin-left:4%;
+    float: left;
+}
+
+
+
+.imageModal{
+    position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:4;
+    display: none;
+}
+.overlayImage{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    margin: 0 auto;
+}
+.viewLook{
+   padding: 70px 0;
+   width: 100%;
+}
+.overlayImage img{
+    width: 30%;
+}
+.viewLook .control{
+    width: 25%;
+    margin: 30px auto 0;
+}
+.viewLook .control img{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.viewLook .control li{
+    width: 25%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+#effectImage:hover{
+    animation: bouceXY 0.5s infinite;
+    -webkit-animation: bouceXY 0.5s infinite;
+    -o-animation: bouceXY 0.5s infinite;
+    -moz-animation: bouceXY 0.5s infinite;
+}
+@keyframes bouceXY {
+    0%   {transform: translateX(10px)}
+    50%   {transform: translateX(-10px)}
+    100% {transform: translateX(10px)}
+}
+@-webkit-keyframes bouceXY {
+    0%   {transform: translateX(10px)}
+    50%   {transform: translateX(-10px)}
+    100% {transform: translateX(10px)}
+}
+@-moz-keyframes bouceXY {
+    0%   {transform: translateX(10px)}
+    50%   {transform: translateX(-10px)}
+    100% {transform: translateX(10px)}
+}
+@-o-keyframes bouceXY {
+    0%   {transform: translateX(10px)}
+    50%   {transform: translateX(-10px)}
+    100% {transform: translateX(10px)}
+}
+
+
+@media screen and (max-width:1025px){
+    .pre-desc .control{
+        width: 30%;
+        float: right;
+    }
+    .pre-desc .content{
+        width: 70%;
+        float: left;
+    }
+    .pre-desc .control a{
+        font-size: 1em;
+        display: inline-block;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .pre-desc .desc-pre{
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    .products-section .desc-pre{
+        font-size: 1em;
+    }
+    
+    .content .desc-pre{
+        position: relative;
+        top:-52px;
+    }
+    
+    .content .add .desc-pre{
+        top:-77px;
+    }
+    .content .advan .desc-pre{
+        top:-68px;
+    }
+    .content .add,
+    .content .simpli,
+    .content .advan,
+    .content .intel{
+        padding-left: 0;
+    }
+    .products-section .desc-pre{
+        
+        padding-left: 30px;
+    }
+    .pre-desc .content{
+        padding-bottom: 0;
+    }
+
+    
+     .overlayImage img{
+         width: 40%;
+     }
+}
+
+@media screen and (max-width:992px){
+    
+    .products-section .desc-pre{
+        font-size: 1em;
+        line-height: 1.5em;
+        padding-left: 60px;
+    }
+    .container {
+        max-width: 920px;
+    }
+    .smallClick{
+        display: none;
+    }
+    .hideAtbeginning{
+        display: block;
+    }
+
+    .add input{
+        width: 15%;
+    }
+
+    h2{
+        margin-bottom: 15px;
+    }
+    .pre-desc .control a{
+        font-size: 1em;
+    }
+    .pre-desc .control{
+        width:35%;
+     }
+     .pre-desc .content{
+        width:65%;
+     }
+     .viewLook .control{
+        width: 40%;
+    }
+}
+@media screen and (max-width:768px){
+    .pre-desc .control a{
+        font-size: 0.95em;
+    }
+    .products-section .desc-pre{
+        padding-left: 15px;
+    }
+    .overlayImage img{
+        width: 50%;
+    }
+    .pre-desc .desc-pre{
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    .products-section .desc-pre{
+        font-size: 1em;
+    }
+
+    .viewLook{
+        padding: 100px 0;
+        width: 100%;
+     }
+}
+@media screen and (max-width:567px){
+    #imgShow{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hideAtbeginning li{
+        width: 15%;
+        margin-left:8%;
+    }
+    .pre-desc .control{
+        width:40%;
+     }
+     .pre-desc .content{
+        width:60%;
+     }
+     .pre-desc .control a{
+        font-size: 0.7em;
+    }
+    .pre-desc .desc-pre{
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+    .content .advan .desc-pre{
+        top:-60px;
+    }
+
+    .overlayImage img{
+        width: 60%;
+    }
+    .viewLook .control{
+        width: 50%;
+    }
+    .viewLook{
+        padding: 100px 0;
+        width: 100%;
+     }
+}
+
+@media screen and (max-width:415px){
+    
+        .pre-desc .desc-pre{
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+        .products-section .desc-pre{
+            font-size: 1em;
+        }
+}    
+
+@media screen and (max-width:375px){
+
+    .pre-desc .desc-pre{
+        font-size: 0.8em;
+        line-height: 1.4em;
+    }
+    .products-section .desc-pre{
+        font-size: 0.8em;
+    }
+
+
+    .pre-desc .control{
+        width:35%;
+     }
+     .pre-desc .content{
+        width:65%;
+     } 
+     .pre-desc .control a{
+        font-size: 0.6em;
+    }
+    .message{
+        font-size: 14px;
+    }
+    .overlayImage img{
+        width: 70%;
+    }
+    .viewLook .control{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:320px){
+    .pre-desc .desc-pre{
+        font-size: 0.7em;
+        line-height: 1.4em;
+    }
+    .products-section .desc-pre{
+        font-size: 0.7em;
+    }
+    .overlayImage img{
+        width: 70%;
+    }
+    .viewLook .control{
+        width: 70%;
+    }
+    .message{
+        font-size: 11px;
+    }
+}

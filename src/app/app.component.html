@@ -1,0 +1,21 @@
+<left-sidebar></left-sidebar>
+<right-sidebar [cartViews]="cartViews" [totalCarts]="totalCarts"></right-sidebar>
+<filter-sidebar></filter-sidebar>
+<div id="main">
+    <div class="entry-header">
+        <img src="assets/images/logoAmuHD.png" alt="">
+    </div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="main-content">
+        <header-scroll [totalCarts]="totalCarts"></header-scroll>
+        <top-header></top-header>
+        <header [totalCarts]="totalCarts"></header>
+        <router-outlet></router-outlet>
+        <footer></footer>
+    </div>
+</div>
+<div id="overlay"></div>

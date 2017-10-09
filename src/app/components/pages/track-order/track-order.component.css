@@ -1,0 +1,83 @@
+#display-page{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 100%;
+}
+
+.form-section{
+    width: 80%;
+    margin: 0 auto 100px;
+}
+.form-section p{
+    padding: 30px 0 50px 0;
+    font-size: 1em; 
+    line-height: 1.75em;
+}
+.display-page-content h1{
+    font-size: 3.125em;
+    line-height: 1.4;
+}
+
+#form-order{
+    text-align: left;
+    font-size: 0.8125em;
+    margin-bottom: 40px;
+}
+
+#form-order label{
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    font-size: 13px;
+    width: 80%;
+    font-weight: bold;
+}
+.btnOrder{
+    display: block;
+    padding: 8px 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.btnOrder:hover{
+    font-weight: 700;
+}
+.col-lg-6 img{
+    width:100%;
+}
+@media screen and (max-width:992px){
+    form#form-order{
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 55px;
+    }
+    .btnOrder[_ngcontent-c8] {
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width:768px){
+    form#form-order{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:375px){
+    form#form-order{
+        margin-top: 50px;
+        width: 130%;
+        margin-left: -5px;
+    }
+    .form-section p{
+        display: none;
+    }
+    .display-page-content h1{
+        font-size: 2.125em;
+        line-height: 1.4;
+    }
+}

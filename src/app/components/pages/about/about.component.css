@@ -1,0 +1,251 @@
+.display-content {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.display-content img {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+
+#about-section{
+    background-color: white;
+    min-height: auto;
+    overflow: hidden;
+}
+#about-section .display-content{
+    background-color: #141414;
+    min-height: 500px;
+}
+#about-section .display-content a {
+    width: 220px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+#about-section .display-content a:hover{
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#about-section .display-content h1 {
+    font-size: 35px;
+    overflow: hidden;
+    margin: 10px 0;
+    font-weight: 300;
+    padding-top:30px;
+}
+#about-section .display-content h3{
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+}
+#about-section p{
+    margin-top: 20px;
+}
+
+.about-desc{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    min-height: auto;
+    overflow: hidden;
+}
+.about-desc a{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0 20px 20px;
+    
+}
+.active-click{
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+}
+.content{
+    padding: 50px 0 30px;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+.content img{
+    width:90%;
+}
+.content .desc{
+    text-align: left;
+    padding-left: 80px;
+}
+.content .desc a{
+    padding: 12px 13px;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.content .desc a:hover{
+    background-color: black;
+    color: white;
+}
+.content .strong{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+
+
+
+@media screen and (max-width:992px){
+    .content{
+        padding: 50px 0 30px;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .content img{
+        width:100%;
+    }
+    .content .desc{
+        padding-left: 20px;
+    }
+    .content p{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:767px){
+    
+    .content img{
+        display: none;
+    }
+    
+    .desc p:last-child{
+        text-align: center;
+        padding: 30px 0;
+    }
+}
+
+
+
+
+/* @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+    .about-desc .control {
+        width: 30%;
+        float: left;
+    }
+    .about-desc .control a{
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .content .desc {
+        float: left;
+        position: relative;
+        top: -70px;
+    }
+    #about-section .display-content{
+        min-height: 400px;
+    }
+    #about-section .display-content a {
+        width: 180px;
+        font-size: 0.8em;
+    }
+} */
+
+
+
+@media screen and (max-width:567px){
+    .about-desc .control {
+        width: 30%;
+        float: left;
+    }
+    .about-desc .content{
+        width: 70%;
+        float: right;
+    }
+    .about-desc .control a{
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .content .desc {
+        float: left;
+        position: relative;
+        top: -70px;
+    }
+    #about-section .display-content{
+        min-height: 400px;
+    }
+    #about-section .display-content a {
+        width: 180px;
+        font-size: 0.8em;
+    }
+    .content{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:415px){
+    .about-desc .control {
+        width: 35%;
+        float: left;
+    }
+    .about-desc .content{
+        width: 65%;
+        float: right;
+    }
+    .about-desc .control a{
+        font-size: 1em;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    
+}
+
+
+@media screen and (max-width:375px){
+    
+
+    .about-desc .control a{
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+    #about-section .display-content h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:360px){
+    
+
+    .about-desc .control a{
+        font-size: 0.7em;
+        text-transform: uppercase;
+    }
+    
+}
+
+@media screen and (max-width:320px){
+    .about-desc .control a{
+        font-size: 0.65em;
+        text-transform: uppercase;
+    }
+    .content .desc a{
+        padding: 12px 13px;
+        font-size: 0.8em;
+    }
+    .content{
+        font-size: 0.7em;
+    }
+}

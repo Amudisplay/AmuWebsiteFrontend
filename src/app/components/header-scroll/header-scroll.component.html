@@ -1,0 +1,23 @@
+<div id="header-scroll">
+  <div class="logo flex-item">
+    <a routerLink="/">
+      <img src="assets/images/logoAmuHD.png" alt="logo AMU">
+    </a>
+  </div>
+  <div class="linkPage">
+      <ul>
+        <li><a routerLink="/pre-order">PRE-ORDER AMU</a></li>
+        <li><a routerLink="/about">ABOUT AMU</a></li>
+      </ul>
+  </div>
+  <div class="cartPlaces flex-item">
+      <ul>
+          <li class="bar"><a  onclick="openLeftNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></li>          
+        <li><a onclick="openRightNav()"><i class="fa fa-shopping-cart" aria-hidden="true">
+            <span class="badge badge-pill badge-warning">{{totalCarts}}</span>  
+        </i></a></li>
+        <li><a ><i class="fa fa-search" aria-hidden="true" ></i></a></li>
+      </ul>
+  </div>
+</div>
+

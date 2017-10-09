@@ -1,0 +1,177 @@
+<div id="display-page">
+  <div class="display-page-content">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="/product-category/display">Displays</a></li>
+        <li class="breadcrumb-item active">AMU display</li>
+      </ol>
+      <h1>AMU Display</h1>
+      <div class="products-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 smallClick" style="list-style:none;">
+                  <div *ngIf="showImgMode==='all'">
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whiteHD.png" class="image" alt=""></a></li>
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blackHD.png" class="image unclicked" alt=""></a></li>
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whitetilHD.png" class="image unclicked" alt=""></a></li>
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blacktilHD.png" class="image unclicked" alt=""></a></li>
+                  </div>
+                  <div *ngIf="showImgMode==='white'">
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whiteHD.png" class="image" alt=""></a></li>
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whitetilHD.png" class="image unclicked" alt=""></a></li>
+                  </div>
+                  <div *ngIf="showImgMode==='black'">
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blackHD.png" class="image" alt=""></a></li>
+                      <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blacktilHD.png"  class="image unclicked" alt=""></a></li>
+                  </div>
+                </div>
+                <div class="col-sm-5" id="imgShow">
+                  <img [src]="imgSrc" alt="" onclick="openModalView()" (click)="openModal()">
+                  
+                  <div class="hideAtbeginning text-center">
+                    <div class="col-xs-12" style="list-style:none;" >
+                        <div *ngIf="showImgMode==='all'">
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whiteHD.png" class="image" alt=""></a></li>
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blackHD.png" class="image unclicked" alt=""></a></li>
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whitetilHD.png" class="image unclicked" alt=""></a></li>
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blacktilHD.png" class="image unclicked" alt=""></a></li>
+                        </div>
+                        <div *ngIf="showImgMode==='white'">
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whiteHD.png" class="image" alt=""></a></li>
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-whitetilHD.png" class="image unclicked" alt=""></a></li>
+                        </div>
+                        <div *ngIf="showImgMode==='black'">
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blackHD.png" class="image" alt=""></a></li>
+                            <li><a (click)="changeImg($event)"><img src="assets/images/preorder-blacktilHD.png"  class="image unclicked" alt=""></a></li>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 desc-pre">
+                  <h2>$4,999.95</h2>
+                  <p><span class="strong">A</span>ll mixed up, nail polish bottles will no longer sit static on the shelf. Nail polish colors will constantly be mixed, allowing for a smooth coating and faster drying time.</p>
+                  <p><span class="strong">M</span>agically stops! Magnetic shelves are constantly in motion and will spin to an upright position once it senses a customer approaching.</p>
+                  <p><span class="strong">U</span>nique and attractive design. Bottles are held magnetically to a rotating bar creating an illusion of bottles floating in mid-air.</p>
+                  <p style="font-weight:bolder; font-size:13px; ">COLOR</p>
+                  <div class="message mt-3">
+                    <flash-messages></flash-messages>
+                  </div>
+                  <select #selected (change)="getSelectedValue(selected)" class="select-style">
+                    <option selected>Choose an option...</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                  </select>
+                  <div class="add">
+                      <input *ngIf="selectedValue && showImgMode!='all'" input value="1" type="number" #quantity  (change)="getQuantity(quantity)" min="1" >
+                      <button type="button" class="btn btn-success" (click)="sendCart()">Add to cart</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="imageModal" id="imageModal" >
+                <div class="container-fluid overlayImage">
+                    <div class="viewLook">
+                        <img [src]="imgSrcViewLook" id="effectImage" class="closeImage" alt="images">
+                        <div class="control" style="list-style:none;">
+                            <li><a (click)="changeImgViewLook($event)"><img src="assets/images/preorder-whiteHD.png" class="imageviewLook closeImage" alt=""></a></li>
+                            <li><a (click)="changeImgViewLook($event)"><img src="assets/images/preorder-blackHD.png" class="imageviewLook unclicked closeImage" alt=""></a></li>
+                            <li><a (click)="changeImgViewLook($event)"><img src="assets/images/preorder-whitetilHD.png" class="imageviewLook unclicked closeImage" alt=""></a></li>
+                            <li><a (click)="changeImgViewLook($event)"><img src="assets/images/preorder-blacktilHD.png" class="imageviewLook unclicked closeImage" alt=""></a></li> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pre-desc">
+            <div class="control">
+                <a class="effect" (click)="changeMode('add')" [class.active-click]="mode==='add'">Additional Information</a>
+                <a class="effect" (click)="changeMode('intel')" [class.active-click]="mode==='intel'">Display with Intelligence</a>
+                <a class="effect" (click)="changeMode('advan')" [class.active-click]="mode==='advan'">AMU Advantages</a>
+                <a class="effect" (click)="changeMode('simpli')" [class.active-click]="mode==='simpli'">Simplicity</a>
+            </div>
+            <div class="content" [@slideup]='state' (@slideup.start)="handleStartSlideup()" (@slideup.done)="handleDoneSlideup()">
+                <div class="add" *ngIf="mode==='add'">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 desc-pre">
+                                <table>
+                                    <tbody class="table">
+                                      <tr><th>Weight</th><td> 55 lbs</td></tr>
+                                      <tr><th>Dimensions</th><td> 34 x 30 x 0.5 in</td></tr>
+                                      <tr><th>color</th><td>Black, White</td></tr>
+                                      <tr><th>Compatibility</th><td>O.P.I, ORLY, MORGAN TAYLOR, HARMONY, IBD, CHINA GLAZE</td></tr>
+                                      <tr><th>Sensor:</th><td>(1) Proximity Sensor</td></tr>
+                                      <tr><th>Capacity</th><td>90 Nail Polish Bottles</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intel" *ngIf="mode==='intel'">
+                    <div class="container">
+                        <div class="row desc-pre">
+                            <div class="col-sm-12">
+                                <p class="text-center">The display consist of six bars holding altogether 90 nail polish bottles programmed to spin autonomously. The spin motion provides a floating illusion that dazzles the eyes and gives it the <span class="strong">“WOW”</span> factor.</p>
+                                <p><span class="strong">Rings:</span> Are the bottles floating?! Disposable netal rings are attached to the bottom of the nail polish bottles using a double sided 3M adhesive tape. One hundred rings with adhesive tape will be provided with every order.</p>
+                                <p><span class="strong">Bars:</span> Bars are embedded with magnets that will hold nail polish bottles in place allowing bottles to adhere securely to bars as the bottles are spun upside down.</p>
+                                <p><span class="strong">Sensors:</span> Two proximity sensors are used to detect customers approaching and will automatically spin nail polish bottles to an upright position to allow customers to easily select their favorite nail color.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advan" *ngIf="mode==='advan'">
+                    <div class="container">
+                        <div class="row desc-pre">
+                            <div class="col-sm-12">
+                                <table>
+                                    <tbody class="table">
+                                      <tr><th>1.</th><td>Smooth excellent mixing capability of nail polishes.</td></tr>
+                                      <tr><th>2.</th><td>Avoids air bubbles and foaming.</td></tr>
+                                      <tr><th>3.</th><td>Minimizes coagulation and separation of the compounds in the polish being mixed.</td></tr>
+                                      <tr><th>4.</th><td>Keeps nail polish fresh, reduces spoilage and wastage of the product being mixed.</td></tr>
+                                      <tr><th>5.</th><td>Improves color consistency and appearance of the nail polish.</td></tr>
+                                      <tr><th>6.</th><td>Helps prevent peeling and chipping of the polish which is to be applied to finger nails or toe nails.</td></tr>
+                                      <tr><th>7.</th><td>Eliminates manual mixing.</td></tr>
+                                      <tr><th>8.</th><td>Saves time. Nail polish paint dries faster</td></tr>
+                                      <tr><th>9.</th><td>User friendly.</td></tr>
+                                      <tr><th>10.</th><td>Impressive.</td></tr>
+                                      <tr><th>11.</th><td>Fancy.</td></tr>
+                                      <tr><th>12.</th><td>Superb quality. Reliable. Built to last</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="simpli" *ngIf="mode==='simpli'">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 desc-pre">
+                                <p><span class="strong">Designed with the salon owner in mind to hang up in 3 easy steps:</span></p>
+                                <table>
+                                    <tbody class="table">
+                                      <tr><th>1.</th><td>Screw Z-Bar to wall (in a stud or w/ drywall screws) using a level is recommended.</td></tr>
+                                      <tr><th>2.</th><td>Slip the lip of the display over the Z-bar and gently tug down to set it in place.</td></tr>
+                                      <tr><th>3.</th><td>Secure the bottom of the display to the wall with two screws.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ol class="breadcrumb breadcrumb-bottom">
+            <li class="breadcrumb-item"><a><span class="bolder">SKU:</span> AMU001</a></li>
+            <li class="breadcrumb-item"><span class="bolder">CATEGORY:</span> Displays</li>
+        </ol>
+    </div>
+  </div>
+  
+</div>
+

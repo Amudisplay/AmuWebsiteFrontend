@@ -1,0 +1,91 @@
+<div id="about-section">
+    <div class="display-content">
+        <h1>Be The First</h1>
+        <h3>To have an AMU Display in your salon!</h3>
+      <img src="assets/images/nearfooterHD.png" class="img-fluid" alt="">
+      <p>
+          <a routerLink="/pre-order">PRE-ORDER TODAY!</a>
+      </p>
+    </div>
+    <div class="about-desc">
+        <div class="control">
+            <a class="effect" (click)="changeMode('what')" [class.active-click]="mode==='what'">What's AMU?</a>
+            <a class="effect" (click)="changeMode('intel')" [class.active-click]="mode==='intel'">Intelligence</a>
+            <a class="effect" (click)="changeMode('simpli')" [class.active-click]="mode==='simpli'">Simplicity</a>
+            <a class="effect" (click)="changeMode('advan')" [class.active-click]="mode==='advan'">Advantages</a>
+        </div>
+        <div class="content">
+            <div class="what" *ngIf="mode==='what'">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" [@slideupTil]='state' (@slideupTil.start)="handleStartSlideup()" (@slideupTil.done)="handleDoneSlideup()" >
+                            <img src="assets/images/preorder-whitetilHD.png" alt="">
+                        </div>
+                        <div class="col-md-6 desc" [@slideup]='state' >
+                            <p><span class="strong">A</span>ll mixed up, nail polish bottles will no longer sit static on the shelf. Nail polish colors will constantly be mixed, allowing for a smooth coating and faster drying time.</p>
+                            <p><span class="strong">M</span>agically stops! Magnetic shelves are constantly in motion and will spin to an upright position once it senses a customer approaching.</p>
+                            <p><span class="strong">U</span>nique and attractive design. Bottles are held magnetically to a rotating bar creating an illusion of bottles floating in mid-air.</p>
+                            <p><a routerLink="/pre-order">PRE-ORDER TODAY!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intel" *ngIf="mode==='intel'">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" [@slideupTil]='state' (@slideupTil.start)="handleStartSlideup()" (@slideupTil.done)="handleDoneSlideup()">
+                            <img src="assets/images/preorder-blacktilHD.png" alt="">
+                        </div>
+                        <div class="col-md-6 desc" [@slideup]='state'>
+                            <p>The display consist of six bars holding altogether 90 nail polish bottles programmed to spin autonomously. The spin motion provides a floating illusion that dazzles the eyes and gives it the <span class="strong">“WOW”</span> factor.</p>
+                            <p><span class="strong">Rings:</span> Are the bottles floating?! Disposable netal rings are attached to the bottom of the nail polish bottles using a double sided 3M adhesive tape. One hundred rings with adhesive tape will be provided with every order.</p>
+                            <p><span class="strong">Bars:</span> Bars are embedded with magnets that will hold nail polish bottles in place allowing bottles to adhere securely to bars as the bottles are spun upside down.</p>
+                            <p><span class="strong">Sensors:</span> Two proximity sensors are used to detect customers approaching and will automatically spin nail polish bottles to an upright position to allow customers to easily select their favorite nail color.</p>
+                            <p><a routerLink="/pre-order">PRE-ORDER TODAY!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simpli" *ngIf="mode==='simpli'">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" [@slideupTil]='state' (@slideupTil.start)="handleStartSlideup()" (@slideupTil.done)="handleDoneSlideup()">
+                            <img src="assets/images/preorder-whiteHD.png" alt="">
+                        </div>
+                        <div class="col-md-6 desc" [@slideup]='state'>
+                            <p><span class="strong">Designed with the salon owner in mind to hang up in 3 easy steps:</span></p>
+                            <p><span class="strong">1.</span> Screw Z-Bar to wall (in a stud or w/ drywall screws) using a level is recommended.</p>
+                            <p><span class="strong">2.</span> Slip the lip of the display over the Z-bar and gently tug down to set it in place.</p>
+                            <p><span class="strong">3.</span> Secure the bottom of the display to the wall with two screws.</p>
+                            <p><a routerLink="/pre-order">PRE-ORDER TODAY!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advan" *ngIf="mode==='advan'">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" [@slideupTil]='state' (@slideupTil.start)="handleStartSlideup()" (@slideupTil.done)="handleDoneSlideup()">
+                            <img src="assets/images/preorder-blackHD.png" alt="">
+                        </div>
+                        <div class="col-md-6 desc" [@slideup]='state'>
+                            <p><span class="strong">1.</span>Smooth excellent mixing capability of nail polishes.</p>
+                            <p><span class="strong">2.</span>Avoids air bubbles and foaming.</p>
+                            <p><span class="strong">3.</span>Minimizes coagulation and separation of the compounds in the polish being mixed.</p>
+                            <p><span class="strong">4.</span>Keeps nail polish fresh, reduces spoilage and wastage of the product being mixed.</p>
+                            <p><span class="strong">5.</span>Improves color consistency and appearance of the nail polish.</p>
+                            <p><span class="strong">6.</span>Helps prevent peeling and chipping of the polish which is to be applied to finger nails or toe nails.</p>
+                            <p><span class="strong">7.</span>Eliminates manual mixing.</p>
+                            <p><span class="strong">8.</span>Saves time. Nail polish paint dries faster</p>
+                            <p><span class="strong">9.</span>User friendly.</p>
+                            <p><span class="strong">10.</span>Impressive.</p>
+                            <p><span class="strong">11.</span>Fancy.</p>
+                            <p><span class="strong">12.</span>Superb quality. Reliable. Built to last</p>
+                            <p><a routerLink="/pre-order">PRE-ORDER TODAY!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

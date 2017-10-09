@@ -1,0 +1,52 @@
+.leftSidenav {
+    height: 100%; /* 100% Full-height */
+    width: 300px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: -1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 25px; /* Place content 60px from the top */
+    font-size: 100%;
+}
+
+/* The navigation menu links */
+#leftSidenav img{
+    padding-left: 20px;
+}
+#leftSidenav .linkPages{
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+#leftSidenav .linkPages li{
+    padding-bottom: 15px;
+}
+#leftSidenav .linkPages li a{
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+.social{
+    margin-top: 20px;
+    list-style: none;
+}
+.social li{
+    margin-right: 20px;
+    float: left;
+    
+}
+.social li i{
+    color: white;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+#leftSidenav .linkPages li a:hover,#leftSidenav .fa:hover{
+    color: gray;
+}

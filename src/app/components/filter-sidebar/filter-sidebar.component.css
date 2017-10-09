@@ -1,0 +1,23 @@
+.filterSidenav {
+    height: 100%; /* 100% Full-height */
+    width: 300px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: -1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 25px; /* Place content 60px from the top */
+    font-size: 100%;
+}
+
+/* The navigation menu links */
+#filterSidenav img{
+    padding-left: 20px;
+}
+#search{
+    padding: 15px;
+}
+#search input.form-control{
+    width: 100%;
+}

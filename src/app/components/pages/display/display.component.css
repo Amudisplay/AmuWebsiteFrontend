@@ -1,0 +1,96 @@
+#display-page{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 100%;
+}
+.breadcrumb{
+    display: inline-block;
+    background: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+.breadcrumb a{
+    color: black;
+}
+
+.breadcrumb-item.active {
+    color: black;
+    font-weight: 500;
+}
+.col-sm-6{
+    text-align: left;
+}
+.display-page-content h1{
+    font-size: 3.125em;
+    line-height: 1.4;
+    margin-top: -20px;
+}
+
+.filer-section{
+    text-align: left;
+    border-bottom: 1px solid #DEDEDE;
+}
+.filer-section i{
+    color:black;
+}
+span.showResult{
+    font-size: 13px;
+    font-weight: 500;
+}
+.filer-section .strong{
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.products-section{
+    margin: 60px 0;
+}
+.products-section .card{
+    width:70%;
+}
+.breadcrumb-item{
+    cursor: default;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+}
+
+.card{
+    margin: 0 auto;
+    border: none;
+    -webkit-box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.33);
+}
+.card-body{
+    text-align: left;
+}
+
+.products-section a{
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+    .products-section .card{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .card{
+        margin: 40px auto 0;
+    }
+    .products-section .card{
+        width:70%;
+    }
+}
+
+@media screen and (max-width:375px){
+    .products-section .card{
+        width:80%;
+    }
+}
